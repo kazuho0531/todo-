@@ -1,1 +1,29 @@
-aaa
+.main
+  .main__list-header
+    .main__list-header__right-content
+      .main__list-header__right-content__current-group 買い物
+      .main__list-header__right-content__current-group-member かずほ
+    .main__list-header__edit-btn　Edit
+  .main__lists
+    .main__lists__list
+      .main__lists__list__thing みりん
+      .main__lists__list__show みりんタイプでは無い
+    .main__lists__list
+      .main__lists__list__thing コーヒー豆
+      .main__lists__list__show
+    .main__lists__list 
+      .main__lists__list__thing トイレットペーパー
+      .main__lists__list__show シングルロール
+  .main__form
+    .main__form__text ttt
+    .main__form__btn edit
+  -# = form_for [@group, @thing] do |f|
+  -#   = f.text_field :content, class: 'chat-main__form__text', placeholder: 'type a message'
+  -#   .form
+  -#     = f.label :image, class: 'main__list-form__image' do
+  -#       = icon('far', 'image', class: 'image')
+  -#       = f.file_field :image, class: 'file'
+  -#   = f.submit 'Add', class: 'main__list-form__btn'
+
+show（詳細）は無いほうが実装が楽な気がする
+ 
