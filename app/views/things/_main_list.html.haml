@@ -15,8 +15,16 @@
       .main__lists__list__thing トイレットペーパー
       .main__lists__list__show シングルロール
   .main__form
-    .main__form__text ttt
-    .main__form__btn edit
+    %form.new_list
+      .input-box
+        %input{type:"text", class: "input-box_text", placeholder: "新しいリスト"}
+      %input{type:"submit", class: "submit-btn"}
+
+
+    -# .main__form__text ttt
+    -# .main__form__btn edit
+
+
   -# = form_for [@group, @thing] do |f|
   -#   = f.text_field :content, class: 'chat-main__form__text', placeholder: 'type a message'
   -#   .form
@@ -25,5 +33,6 @@
   -#       = f.file_field :image, class: 'file'
   -#   = f.submit 'Add', class: 'main__list-form__btn'
 
-show（詳細）は無いほうが実装が楽な気がする
+-# show（詳細）は無いほうが実装が楽な気がする
+
  
